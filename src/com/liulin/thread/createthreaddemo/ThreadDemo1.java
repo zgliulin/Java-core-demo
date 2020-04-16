@@ -1,17 +1,16 @@
-package com.liulin.thread;
+package com.liulin.thread.createthreaddemo;
 
 /**
  * Create by DbL on 2020/4/14 0014
  */
-public class ThreadRunableDemo implements  Runnable {
+public class ThreadDemo1  extends  Thread{
     @Override
     public void run() {
         System.out.println("当前线程："+Thread.currentThread().getName());
     }
 
     public static void main(String[] args) {
-        ThreadRunableDemo t = new ThreadRunableDemo();
-        Thread t1 = new Thread(t);
-        t1.start();
+        ThreadDemo1 t = new ThreadDemo1();
+        t.start();
     }
 }

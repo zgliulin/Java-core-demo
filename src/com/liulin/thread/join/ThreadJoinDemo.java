@@ -1,4 +1,4 @@
-package com.liulin.thread;
+package com.liulin.thread.join;
 
 /**
  * Create by DbL on 2020/4/14 0014
@@ -21,7 +21,7 @@ public class ThreadJoinDemo {
         });
         try {
             t1.start();
-            //t1.join();
+            t1.join();
             t2.start();
             Thread.sleep(1000);
         }catch (Exception e){
